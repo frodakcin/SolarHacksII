@@ -27,12 +27,11 @@ body
 }
 ::-webkit-scrollbar-thumb
 {
-	/*background: rgb(0,0,0,0.3);*/
-	background: red;
+	background: rgb(255,255,255,0.3);
 	border-radius: 10000px;
 }
 
-/* ---------------------------------------------------------------- HEADER */
+/* ---------------------------------------------------------------- FRONT PAGE */
 #frontPage
 {
 	height: 100%;
@@ -51,6 +50,7 @@ body
 #frontPageTitle
 {
 	font-size: 100px;
+height: 20%;
 }
 #frontPageSubtitle
 {
@@ -66,13 +66,13 @@ body
 	border: none;
 
 	position: relative;
-	width: 15%;
+	width: 30%;
 	height: 20%;
 	transition: 0.5s;
 }
 #frontPageButton:hover
 {
 	font-size: 50px;
-	color: linear-gradient(90deg, red, blue);
 }
 
+/* ---------------------------------------------------------------- HEADER */
