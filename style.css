@@ -68,7 +68,7 @@ body::-webkit-scrollbar-button {
 	height: 100%;
 	width: 100%;
 	position: absolute;
-	background: radial-gradient(ellipse at center,       rgb(200, 200, 0), rgba(200, 200, 0, 0.5) 20%, transparent 80%);
+	background: radial-gradient(ellipse at center, rgb(200, 200, 0), rgba(200, 200, 0, 0.5) 20%, transparent 80%);
 	/*background-attachment: fixed;*/
 }
 #frontPageInformation
