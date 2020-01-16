@@ -1,21 +1,31 @@
 <!DOCTYPE html>
 
+
 <head>
 	<meta charset="utf-8">
-	<title>SolarHacks II</title> <link href="style.css" type="text/css" rel="stylesheet">
+	<title>SolarHacks II</title>
+	<link href="style.css" type="text/css" rel="stylesheet">
+	<!-- <link rel="stylesheet" href="Gilroy.css"> -->
+	<link rel="stylesheet" href="https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css">
+	<link rel="icon" href="icon.png">
 </head>
 
 <body>
 	<div id="wrapper">
 		<div id="frontPage">
-			<div id="frontPageInformation">
-				<h1 id="frontPageTitle">
-					<big><big><big><big><big><big>SolarHacks II</big></big></big></big></big></big>
-				</h1>
-				<h2 id="frontPageSubtitle">
-					<big><big>Location, Date, Time <br> Please provide background images to make this look good</big></big>
-				</h2>
-				<input id="frontPageButton" type="button" value="Sign Up!" onclick="window.open('signup.html', '_self')"/>
+			<div style="background: #ffffff30; height: 100%; width: 100%;">
+				<div id="frontPageInformation" align="center">
+					<h1 id="frontPageTitle">
+						<big><big><big><big><big><big><big>SolarHacks II</big></big></big></big></big></big></big>
+					</h1>
+					<h2 id="frontPageSubtitle">
+						<big><big>Street Address, City</big></big><br>
+						<big><big>March 14 2020</big></big><br>
+					</h2>
+					<!--<input id="frontPageButton" type="button" value="Sign Up!" onclick="window.open('signup.html', '_self')"/>-->
+					<button id="frontPageButton" onclick="window.open('signup.html', '_self')">Sign Up!</button>
+					<!-- put actual link here -->
+				</div>
 			</div>
 		</div>
 		<div id="headerBar" class="headerNoStick">
@@ -32,14 +42,20 @@
 		<div id="information">
 
 			<div id="about" class="infoSection" align="center">
-				<div class="infoHeader"><h1><big><big><big><big> About SolarHacks </big></big></big></big></h1></div>
-				<p id="aboutLeft"><big><big>Abraham Lincoln, the 16th President of the United States, was assassinated by well-known stage actor John Wilkes Booth on April 14, 1865, while attending the play Our American Cousin at Ford's Theatre in Washington, D.C. Shot in the head as he watched the play, Lincoln died the following day at 7:22 am, in the Petersen House opposite the theater. He was the first U.S. president to be assassinated, and Lincoln's funeral and burial marked an extended period of national mourning (Wikipedia)</big></big></p>
-				<iframe id="aboutMap" width="500px" height="400px" src="https://maps.google.com/maps?q=yellowstone%20national%20park&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+				
+				<h1 class="infoHeader" id="aboutHeader"> About SolarHacks </h1>
+				<p class="infoBox aboutBox">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+				<p class="infoBox aboutBox">Among 16 coins there are 8 heavy coins with weight of 11 g, and 8 light coins with weight of 10 g, but it's unknown what weight of any coin is. One of the coins is anniversary. How to know, is anniversary coin heavy or light, via three weighings on scales with two cups and without any weight? (Russia)</p>
 			</div>
+			
 			<hr class="separator" onclick="window.location.href='#'">
+			
 			<div id="FAQ" class="infoSection" align="center">
-				<div class="infoHeader"><h1><big><big><big><big>Frequently Asked Questions</big></big></big></big></h1></div>
+				<h1 class="infoHeader" id="FAQHeader">Frequently Asked Questions</h1>
 			</div>
+			
+			
+			
 			<hr class="separator" onclick="window.location.href='#'">
 			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
