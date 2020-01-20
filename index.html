@@ -6,14 +6,16 @@
 	<title>SolarHacks II</title>
 	<link href="style.css" type="text/css" rel="stylesheet">
 	<!-- <link rel="stylesheet" href="Gilroy.css"> -->
-	<link rel="stylesheet" href="https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css">
-	<link rel="icon" href="icon.png">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css"><!-- Gilroy -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,500,700,900|Open+Sans:300,600,700&display=swap" rel="stylesheet"> <!-- Montserrat and Open Sans -->
+	
+	<link rel="icon" href="logo_img.png">
 </head>
 
 <body>
 	<div id="wrapper">
 		<div id="frontPage">
-			<div style="background: #ffffff30; height: 100%; width: 100%;">
+			<div style="background: hsla(300, 14%, 43%, 0.6); height: 100%; width: 100%;">
 				<div id="frontPageInformation" align="center">
 					<h1 id="frontPageTitle">
 						<big><big><big><big><big><big><big>SolarHacks II</big></big></big></big></big></big></big>
@@ -43,26 +45,181 @@
 
 			<div id="about" class="infoSection" align="center">
 				
-				<h1 class="infoHeader" id="aboutHeader"> About SolarHacks </h1>
-				<p class="infoBox aboutBox">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-				<p class="infoBox aboutBox">Among 16 coins there are 8 heavy coins with weight of 11 g, and 8 light coins with weight of 10 g, but it's unknown what weight of any coin is. One of the coins is anniversary. How to know, is anniversary coin heavy or light, via three weighings on scales with two cups and without any weight? (Russia)</p>
+				<h1 class="infoHeader" id="aboutHeader"> About </h1>
+				
+				<div class="infoContent" id="aboutContent">
+					<p class="infoBox aboutBox">Solar Hacks is a one-day, 200-participant Hackathon that is independent and unaffiliated with any school. Our goal is to bring middle and high school students in the Bay Area together to come together and develop innovative ideas that could revolutionize the world. At Solar Hacks, we provide students with the resources and mentorship that would be needed to convert their ideas into a reality. Additionally, by the end of the Hackathon, students will be able to learn how to collaborate with their peers to build STEM projects, gain presentation skills, and be inspired to continue doing things they love! Food, workshops, assistance, drinks, and swag will be provided to all participants for free! We want all participants to enjoy their day at Solar Hacks, hence, we would encourage everybody to arrive to the Hackathon with a competitive mindset.</p>
+					<p class="infoBox aboutBox">Insert map here</p>
+				</div>
 			</div>
 			
 			<hr class="separator" onclick="window.location.href='#'">
 			
 			<div id="FAQ" class="infoSection" align="center">
-				<h1 class="infoHeader" id="FAQHeader">Frequently Asked Questions</h1>
+				<h1 class="infoHeader" id="FAQHeader">FAQ</h1>
+				<div id="FAQContainer">
+					<div class="FAQBox" onclick="FAQDrop(this);">
+						<h1>Who can attend?</h1>
+						<p>SolarHacks is open to all middle and high school students (7th to 12th grade). No experience is necessary, and we would love to see new participants! However, if you have already graduated from high school, you can still attend as a mentor!</p>
+					</div>
+					<div class="FAQBox" onclick="FAQDrop(this);">
+						<h1>Do I have to pay for anything?</h1>
+						<p>Attending SolarHacks is and will always be free! Leave your money at home, as we won't be selling you anything! We will provide you with breakfast, lunch, dinner, and a bunch of snacks, all for free!</p>
+					</div>
+					<div class="FAQBox" onclick="FAQDrop(this);">
+						<h1>What can I get from coming?</h1>
+						<p>In addition to a fun and unique experience to improve your maker skills with your friends, we will have amazing prizes for our best submissions! And even if you don't end up winning, everyone will get free food and swag, including T-shirts, laptop stickers, and various goodies from our sponsors!</p>
+					</div>
+					<div class="FAQBox" onclick="FAQDrop(this);">
+						<h1>What should I bring?</h1>
+						<p>All you need to bring is a laptop to work on, a student ID from your school, toiletries, and any accessories you might want (headphones, chargers, cool hardware to work with, etc). We'll provide the food, swag, prizes, and mentors for free!</p>
+					</div>
+					<div class="FAQBox" onclick="FAQDrop(this);">
+						<h1>What can I make?</h1>
+						<p>Anything you want! Software projects are often the most popular type of submission, but we also welcome and encourage other types of unique submissions, like hardware (Arduinos, Raspberry Pi, etc), invention prototypes, artwork, or anything else you can think of. Even if you can't or don't want to code, there are still plenty of things you can make to wow the judges!</p>
+					</div>
+					<div class="FAQBox" onclick="FAQDrop(this);">
+						<h1>How many people can be in a team?</h1>
+						<p>Teams can be a maximum of 4 people. Solo teams are allowed, but we strongly encourage you to meet new people if you come by yourself! On the other hand, if you are a team of 2 or 3, one of the best things you can do is invite someone new to join your team - they will bring in new ideas and areas of expertise. At the beginning of the event, we will do our best to help everyone find a team.</p>
+					</div>
+					<div class="FAQBox" onclick="FAQDrop(this);">
+						<h1>How long is the event?</h1>
+						<p>SolarHacks is a one-day event, for it will last from 7:00 AM - 10:00 PM. It will be a fun and exciting day!</p>
+					</div>
+					<div class="FAQBox" onclick="FAQDrop(this);">
+						<h1>Do I have to know how to code?</h1>
+						<p>Definitely not! If you don't feel like coding, there are still so many things you can make - see 'What can I make?' for a couple ideas. If you do want to code something but don't know how yet, don't worry! We will hold workshops and provide expert mentors to help you get started.</p>
+					</div>
+					<div class="FAQBox" onclick="FAQDrop(this);">
+						<h1>How will our project be judged?</h1>
+						<p>All projects will be judged with the same criteria: originality, polish, difficulty of implementation, and viability as a product. We highly suggest that you treat your project like a product that you could potentially sell- rather than pitching just for the judges, pitch for everyone else, too!</p>
+					</div>
+					<div class="FAQBox" onclick="FAQDrop(this);">
+						<h1>I have more questions, help me!</h1>
+						<p>Please feel free to join the official SolarHacks Discord channel at: solarhacks.org/discord or feel free to email us at contact@solarhacks.org!</p>
+					</div>
+				</div>
+			</div>
+			
+			<hr class="separator" onclick="window.location.href='#'">
+			
+			<div id="Sponsor" class="infoSection" align="center">
+				<h1 class="infoHeader" id="SponsorHeader">Sponsors</h1>
 			</div>
 			
 			
+			<hr class="separator" onclick="window.location.href='#'">
+			
+			<div id="Sched" class="infoSection" align="center">
+				<h1 class="infoHeader" id="SchedHeader">Schedule</h1>
+			</div>
 			
 			<hr class="separator" onclick="window.location.href='#'">
+			
+			<div id="Award" class="infoSection" align="center">
+				<h1 class="infoHeader" id="AwardHeader">Awards and Prizes</h1>
+			</div>
+			
+			<hr class="separator" onclick="window.location.href='#'">
+			
+			<div id="Team" class="infoSection" align="center">
+				<h1 class="infoHeader" id="TeamHeader">Our Team</h1>
+				<ul id="TeamContent">
+					<li class="TeamMember">
+						<div class="TeamMemberWrap">
+							<img src="TeamPics/Ishan.jpg" alt="Ishan Jain">
+							<h1>Ishan Jain</h1>
+							<p>Executive Director</p>
+						</div>
+					</li>
+					<li class="TeamMember">
+						<div class="TeamMemberWrap">
+							<img src="TeamPics/Kevin.jpg" alt="Kevin Chu">
+							<h1>Kevin Chu</h1>
+							<p>Director of Sponsorships</p>
+						</div>
+					</li>
+					<li class="TeamMember">
+						<div class="TeamMemberWrap">
+							<img src="TeamPics/Siyong.jpg" alt="Siyong Huang">
+							<h1>Siyong Huang</h1>
+							<p>Director of Tech</p>
+						</div>
+					</li>
+					<li class="TeamMember">
+						<div class="TeamMemberWrap">
+							<img src="TeamPics/Justin.png" alt="Justin Chiang">
+							<h1>Justin Chiang</h1>
+							<p>Director of Operations</p>
+						</div>
+					</li>
+					<li class="TeamMember">
+						<div class="TeamMemberWrap">
+							<img src="TeamPics/Neeraj.jpg" alt="Neeraj Rattehalli">
+							<h1><small>Neeraj Rattehalli</small></h1>
+							<p>Director of Outreach</p>
+						</div>
+					</li>
+					<li class="TeamMember">
+						<div class="TeamMemberWrap">
+							<img src="TeamPics/KChoe.jpeg" alt="Kevin Choe">
+							<h1>Kevin Choe</h1>
+							<p>Operations</p>
+						</div>
+					</li>
+					<li class="TeamMember">
+						<div class="TeamMemberWrap">
+							<img src="TeamPics/Siddhant.jpg" alt="Siddhant Kumar">
+							<h1><small>Siddhant Kumar</small></h1>
+							<p>Operations</p>
+						</div>
+					</li>
+					<li class="TeamMember">
+						<div class="TeamMemberWrap">
+							<img src="TeamPics/Ritu.jpg" alt="Ritu Atreyas">
+							<h1>Ritu Atreyas</h1>
+							<p>Operations</p>
+						</div>
+					</li>
+					<li class="TeamMember">
+						<div class="TeamMemberWrap">
+							<img src="TeamPics/Harshil.png" alt="Harshil Garg">
+							<h1>Harshil Garg</h1>
+							<p>Sponsorships</p>
+						</div>
+					</li>
+					<li class="TeamMember">
+						<div class="TeamMemberWrap">
+							<img src="TeamPics/Jay.jpg" alt="Jay Paek">
+							<h1>Jay Paek</h1>
+							<p>Sponsorships</p>
+						</div>
+					</li>
+					<li class="TeamMember">
+						<div class="TeamMemberWrap">
+							<img src="TeamPics/Priya.jpg" alt="Priya Charagondla">
+							<h1><small><small>Priya Charagondla</small></small></h1>
+							<p>Outreach</p>
+						</div>
+					</li>
+					<li class="TeamMember">
+						<div class="TeamMemberWrap">
+							<img src="TeamPics/Greg.jpg" alt="Gregory Wu">
+							<h1>Gregory Wu</h1>
+							<p>Outreach</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+			
+			<!-- 
 			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 			<a href="#" style = "color: white"> back to top </a>
 			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 			<a href="#" style = "color: white"> back to top </a>
+			-->
 		</div>
 	</div>
 

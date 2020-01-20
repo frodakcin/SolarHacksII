@@ -4,12 +4,16 @@ html
 }
 :root
 {
-	--background: hsl(300, 14%, 43%);
+	--background: white;
 
 	--lightbackground: hsl(300, 14%, 48%);
 
 	--darkbackground: hsl(300, 14%, 10%);
 	--edarkbackground: hsl(300, 60%, 5%);
+	
+	--color1: #7C17AF;
+	--color2: #3849D7;
+	--color3: #DB9B1B;
 }
 
 body
@@ -28,6 +32,7 @@ body
 
  
 /* ---------------------------------------------------------------- SCROLL BAR */
+/*
 body::-webkit-scrollbar
 {
 	width: 15px;
@@ -53,6 +58,7 @@ body::-webkit-scrollbar-corner
 	background: var(--background);
 	color: var(--background);
 }
+*/
 
 
 /* ---------------------------------------------------------------- FRONT PAGE */
@@ -61,7 +67,7 @@ body::-webkit-scrollbar-corner
 	height: 100%;
 	width: 100%;
 	position: absolute;
-	background-image: url("logo_clear.png"), url("background.jpg");
+	background-image: url("logo_img.png"), url("background_2.jpg");
 	background-attachment: scroll, fixed;
 	background-size: 150px 150px, cover;
 	background-position: 50% 10%, center;
@@ -198,54 +204,56 @@ body::-webkit-scrollbar-corner
 	border-color: var(--lightbackground);
 	border-width: 5px;
 	border-style: dashed;
-	margin-top: 2.5%;
-	margin-bottom: 2.5%;
+	margin: auto;
 	cursor: pointer;
 }
 .infoSection
 {
 	position: relative;
-	width: 90%;
 	padding: 5%;
 	overflow: auto;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
 }
 .infoHeader
 {
-	display: block;
-	flex: 0 0 auto;
+	display: inline-block;
 	padding-left: 0.5em;
 	padding-right: 0.5em;
 	padding-top: 0;
 	padding-bottom: 0;
 	margin: 0;
-	margin-bottom: 0.25em;
-	border: 3px outset var(--background);
+	margin-bottom: 60px;
+	/*border: 3px outset var(--background);*/
 	border-radius: 10000px;
-	text-shadow: -2px -2px 1px var(--darkbackground);
+	/*text-shadow: -2px -2px 1px var(--darkbackground);*/
 	
+	font-family: Gilroy;
 	font-size: 6em;
 	font-weight: 700;
+	color: #5a2dc4;
+}
+.infoContent
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
 }
 .infoBox
 {
-	border-radius: 60px;
+	border-radius: 5px;
 	max-width: 100%;
 	min-width: 300px;
 	padding: 40px;
-	margin-left: 20px;
-	margin-right: 20px;
+	margin-left: 40px;
+	margin-right: 40px;
 	margin-top: 40px;
+	
+	color: #d6fffe;
 	
 	text-align: justify;
 	
 	flex-wrap: nowrap;
 	flex: 1 1 300px;
 	
-	font-weight: 800;
-	font-size: 2em;
 }
 
 
@@ -256,23 +264,165 @@ body::-webkit-scrollbar-corner
 }
 #aboutHeader
 {
-	color: #00c060;
+}
+#aboutContent
+{
+	background: #5a2dc4;
+	border-radius: 5px;
 }
 .aboutBox
 {
-	background: #00c060;
-	color: #c04000;
-	border: 0.5em solid #008050;
+	margin: 0;
+	/*border: 10px solid #008050;*/
 	/*text-shadow: 0 0 1px #502000;*/
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 200;
+	font-size: 1.2em;
 }
 
 /* ---------------------------------------------------------------- FAQ */
 
 #FAQHeader
 {
-	color: #0080d0;
+}
+#FAQContainer
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: flex-start;
 }
 .FAQBox
 {
-	background: #0080d0;
+	cursor: pointer;
+	min-width: 300px;
+	
+	padding: 1em;
+	border-radius: 5px;
+	/*border: 5px solid #307080;*/
+	margin: 10px;
+	
+	flex: 1 1 400px;
+	text-align: left;
+	transition: background 0.5s;
+	
+	color: hsla(330, 20%, 45%, 1);
+}
+.FAQBox:hover
+{
+	background: #5a2dc410;
+}
+.FAQBoxOn
+{
+	background: #5a2dc410;
+}
+.FAQBox h1
+{
+	font-size: 1.8em;
+	font-family: Montserrat, sans-serif;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.FAQBox p
+{
+	/*margin-bottom: 10px;*/
+	margin: 0;
+	overflow: hidden;
+	transition: max-height 0.5s ease-in-out;
+	max-height: 0px;
+}
+.FAQBox .FAQBoxOnP
+{
+	max-height: 13em;
+}
+
+/* ---------------------------------------------------------------- Sponsors */
+#Sponsor
+{
+}
+#SponsorHeader
+{
+}
+
+
+/* ---------------------------------------------------------------- Schedule */
+
+#Sched
+{
+}
+#SchedHeader
+{
+}
+
+/* ---------------------------------------------------------------- Awards */
+
+#Award
+{
+}
+#AwardHeader
+{
+}
+
+/* ---------------------------------------------------------------- Our Team */
+
+#Team
+{
+}
+#TeamHeader
+{
+}
+#TeamContent
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.TeamMember
+{
+	display: block;
+	min-width: 300px;
+	height: 400px;
+	margin: none;
+	padding: none;
+	flex: 1 1 400px;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.TeamMemberWrap
+{
+	width: 250px;
+	background: hsla(100, 70%, 70%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 2em 1em 2em 1em;
+	border-radius: 200px 200px 50px 50px;
+	
+	
+}
+.TeamMemberWrap img
+{
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	margin: none;
+	padding: none;
+	display: block;
+}
+.TeamMemberWrap h1
+{
+	margin: 10px 0px 0px 0px;
+	padding: 0;
+	font-family: Montserrat, sans-serif;
+	font-weight: 900;
+}
+.TeamMemberWrap p
+{
+	margin: 0;
+	padding: 0;
+	font-family: Montserrat, sans-serif;
+	font-weight: 300;
 }
