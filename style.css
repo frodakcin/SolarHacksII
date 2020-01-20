@@ -137,12 +137,15 @@ body::-webkit-scrollbar-corner
 
 #headerBar
 {
-	z-index: 10;
-	height: 3em;
+	height: 50px;
+	z-index: 1;
 	width: 100%;
-	background: var(--edarkbackground);
-	border-top: 2px solid var(--lightbackground);
-	border-bottom: 2px solid var(--lightbackground);
+	/*
+	background: #5a2dc4;
+	color: #f0b0ff;
+	*/
+	background: black;
+	color: #f0b0ff;
 }
 .headerNoStick
 {
@@ -155,32 +158,43 @@ body::-webkit-scrollbar-corner
 	top: 0%;
 }
 
-#headerBarInfo
+.headerBarLeft
 {
-	position: relative;
 	height: 100%;
-	width: 80%;
-	left: 20%;
-	top: 0px;
+	float: left;
+	font-weight: 700;
+	cursor: pointer;
 }
+.headerBarLeft img
+{
+	height: 100%;
+	width: auto;
+	float: left;
+}
+.headerBarLeft p
+{
+	float: left;
+}
+.headerBarLeft:hover
+{
+	font-weight: 900;
+}
+
 .headerBarElement
 {
-	font-family: fantasy;
+	font-family: Gilroy;
+	font-weight: 700;
 	position: relative;
 	float: right;
 	width: 7em;
-	height: 100%;
-	border-left: 2px dotted var(--lightbackground);
-	transition: box-shadow 0.25s, color 0.5s;
 
 	text-align: center;
-	line-height: 3.5em;
+	align-content: center;
 	cursor: pointer;
 }
 .headerBarElement:hover
 {
-	box-shadow: inset 0 0 2em 0.5em rgba(255, 255, 0, 0.1);
-	color: rgba(150, 150, 255, 1);
+	font-weight: 900;
 }
 
 /* ---------------------------------------------------------------- GENERAL INFORMATION */
