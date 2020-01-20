@@ -1,6 +1,7 @@
 html
 {
 	scroll-behavior: smooth;
+	-webkit-scroll-behavior: smooth;
 }
 
 body
@@ -207,8 +208,8 @@ body::-webkit-scrollbar-corner
 		#00000000 600px, var(--color1) 600px, var(--color1) 650px, #00000000 650px,
 		#00000000 700px, var(--color1) 700px, var(--color1) 750px, #00000000 750px),
 			linear-gradient(172deg,
-		#00000000 670px, var(--color1) 670px, var(--color1) 720px, #00000000 720px,
-		#00000000 770px, var(--color1) 770px, var(--color1) 820px, #00000000 820px);
+		#00000000 600px, var(--color1) 600px, var(--color1) 650px, #00000000 650px,
+		#00000000 700px, var(--color1) 700px, var(--color1) 750px, #00000000 750px);
 }
 .separator
 {
@@ -226,7 +227,7 @@ body::-webkit-scrollbar-corner
 	overflow: visible;
 	text-align: center;
 	font-family: Montserrat, sans-serif;
-	font-weight: 300;
+	font-weight: 200;
 }
 .separator:before
 {
@@ -267,9 +268,8 @@ body::-webkit-scrollbar-corner
 .infoBox
 {
 	border-radius: 5px;
-	max-width: 100%;
 	min-width: 300px;
-	padding: 40px;
+	padding: 20px;
 	margin-left: 40px;
 	margin-right: 40px;
 	margin-top: 40px;
@@ -297,6 +297,8 @@ body::-webkit-scrollbar-corner
 	margin-top: 15px;
 	background: #5a2dc4;
 	border-radius: 5px;
+	margin-left: 5vw;
+	margin-right: 5vw;
 }
 .aboutBox
 {
@@ -410,7 +412,7 @@ body::-webkit-scrollbar-corner
 {
 	display: block;
 	min-width: 300px;
-	height: 400px;
+	height: 450px;
 	margin: none;
 	padding: none;
 	flex: 1 1 400px;
@@ -424,10 +426,13 @@ body::-webkit-scrollbar-corner
 	width: 250px;
 	background: #5a2dc4;
 	color: #d6fffe;
+	
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
+	flex-direction: column;
+	
 	padding: 2em 1em 2em 1em;
 	border-radius: 200px 200px 50px 50px;
 }
@@ -452,5 +457,31 @@ body::-webkit-scrollbar-corner
 	margin: 0;
 	padding: 0;
 	font-family: Montserrat, sans-serif;
-	font-weight: 300;
+	font-weight: 200;
+}
+.TeamMemberWrap div
+{
+	margin: none;
+	padding: none;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	width: 15em;
+	padding-top: 1em;
+}
+.TeamMemberWrap div i
+{
+	font-size: 3em;
+	color: #d6fffe40;
+}
+.TeamMemberWrap div a i
+{
+	cursor: pointer;
+	color: #d6fffe;
+	transition: color 0.5s;
+}
+.TeamMemberWrap div a i:hover
+{
+	color: #00b0ff;
 }
