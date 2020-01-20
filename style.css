@@ -2,24 +2,9 @@ html
 {
 	scroll-behavior: smooth;
 }
-:root
-{
-	--background: white;
-
-	--lightbackground: hsl(300, 14%, 48%);
-
-	--darkbackground: hsl(300, 14%, 10%);
-	--edarkbackground: hsl(300, 60%, 5%);
-	
-	--color1: #7C17AF;
-	--color2: #3849D7;
-	--color3: #DB9B1B;
-}
 
 body
 {
-	background: var(--background);
-
 	padding: 0;
 	margin: 0;
 	transition: color 0.3s;
@@ -27,7 +12,6 @@ body
 }
 #wrapper
 {
-	color: var(--textcolor);
 }
 
  
@@ -67,29 +51,28 @@ body::-webkit-scrollbar-corner
 	height: 100%;
 	width: 100%;
 	position: absolute;
-	background-image: url("logo_img.png"), url("background_2.jpg");
+	background-image: url("logo_img.png"), url("background_1.jpg");
 	background-attachment: scroll, fixed;
 	background-size: 150px 150px, cover;
 	background-position: 50% 10%, center;
 	background-repeat: no-repeat, no-repeat;
 
 	color: white;
+	align-content: center;
 }
 #frontPageInformation
 {
-	margin: auto;
-	position: relative;
-	top: 10%;
-	width: 60%;
-	min-width: 50em;
-	padding-top: 200px;
-	padding-bottom: 5em;
+	width: 100%;
+	height: 100%;
+	background: hsla(300, 14%, 43%, 0.6);
 
 	/*background: rgba(255, 255, 255, 0.55);*/
 	/*box-shadow: inset 0 0 12px 12px rgba(255, 255, 255, 0.3);*/
-	border-radius: 5em;
 
-	transition: 0.2s;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 #frontPageTitle
 {
@@ -98,7 +81,7 @@ body::-webkit-scrollbar-corner
 	padding: 0;
 	margin: 0;
 }
-#frontPageSubtitle
+.frontPageSubtitle
 {
 	color: #f0b0ff;
 	text-shadow: 2px 2px 1px #5a2dc4, -2px -2px 1px #5a2dc4, -2px 2px 1px #5a2dc4, 2px -2px 1px #5a2dc4;
@@ -119,7 +102,7 @@ body::-webkit-scrollbar-corner
 	border: 5px solid #3b009f;
 
 	position: relative;
-	width: 30%;
+	width: 7em;
 	height: 2.5em;
 	transition: 0.5s;
 	cursor: pointer;
@@ -128,6 +111,7 @@ body::-webkit-scrollbar-corner
 {
 	height: 2.08333333333em;
 	margin-top: 0.41666666666em;
+	width: 5.83333333333em;
 	font-size: 3em;
 	color: #3b009f;
 	background: #f0b0ff;
@@ -215,11 +199,28 @@ body::-webkit-scrollbar-corner
 {
 	width: 80%;
 	left: 10%;
-	border-color: var(--lightbackground);
-	border-width: 5px;
-	border-style: dashed;
+	height: 0.2em;
 	margin: auto;
 	cursor: pointer;
+	
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	border-left: none;
+	border-right: none;
+	
+	overflow: visible;
+	text-align: center;
+	font-family: Montserrat, sans-serif;
+	font-weight: 300;
+}
+.separator:before
+{
+	content: "BACK TO TOP";
+	position: relative;
+	top: -0.5em;
+	font-size: 1em;
+	background: white;
+	padding: 0 1em;
 }
 .infoSection
 {
