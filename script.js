@@ -13,25 +13,21 @@ function stickyHeaderCheck()
 		headerBar.classList.add("headerNoStick");
 	}
 }
+window.onscroll = stickyHeaderCheck;
 
-
-
-window.onscroll = function()
-{
-	stickyHeaderCheck();
-};
 
 function FAQDrop(item)
 {
-	para = item.children[1];
-	if(para.classList.contains("FAQBoxOnP"))
+	par = item.parentElement;
+	sib = par.children[1];
+	if(sib.classList.contains("FAQBoxOnP"))
 	{
-		item.classList.remove("FAQBoxOn");
-		para.classList.remove("FAQBoxOnP");
+		sib.classList.remove("FAQBoxOnP");
+		par.classList.remove("FAQBoxOn");
 	}
 	else
 	{
-		item.classList.add("FAQBoxOn");
-		para.classList.add("FAQBoxOnP");
+		sib.classList.add("FAQBoxOnP");
+		par.classList.add("FAQBoxOn");
 	}
 }	
