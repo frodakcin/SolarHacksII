@@ -100,7 +100,7 @@ body::-webkit-scrollbar-corner
 }
 #frontPageSubtitle
 {
-	color: #d600fe;
+	color: #f0b0ff;
 	text-shadow: 2px 2px 1px #5a2dc4, -2px -2px 1px #5a2dc4, -2px 2px 1px #5a2dc4, 2px -2px 1px #5a2dc4;
 	padding: 0;
 	margin: 0;
@@ -130,7 +130,7 @@ body::-webkit-scrollbar-corner
 	margin-top: 0.41666666666em;
 	font-size: 3em;
 	color: #3b009f;
-	background: #e600ff;
+	background: #f0b0ff;
 }
 
 /* ---------------------------------------------------------------- HEADER */
@@ -393,15 +393,15 @@ body::-webkit-scrollbar-corner
 .TeamMemberWrap
 {
 	width: 250px;
-	background: hsla(100, 70%, 70%);
+	/*background: hsla(100, 70%, 70%);*/
+	background: #5a2dc4;
+	color: #d6fffe;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
 	padding: 2em 1em 2em 1em;
 	border-radius: 200px 200px 50px 50px;
-	
-	
 }
 .TeamMemberWrap img
 {
