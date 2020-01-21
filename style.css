@@ -406,15 +406,16 @@ body::-webkit-scrollbar-corner
 {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: space-around;
+	padding: 0;
 }
 .TeamMember
 {
 	display: block;
 	min-width: 300px;
 	height: 450px;
-	margin: none;
-	padding: none;
+	margin: 0;
+	padding: 0;
 	flex: 1 1 400px;
 	
 	display: flex;
@@ -433,8 +434,8 @@ body::-webkit-scrollbar-corner
 	flex-wrap: wrap;
 	flex-direction: column;
 	
-	padding: 2em 1em 2em 1em;
-	border-radius: 200px 200px 50px 50px;
+	padding: 2em 1em 1em 1em;
+	border-radius: 200px 200px 20px 20px;
 }
 .TeamMemberWrap img
 {
@@ -457,6 +458,7 @@ body::-webkit-scrollbar-corner
 	margin: 0;
 	padding: 0;
 	font-family: Montserrat, sans-serif;
+	font-size: 1em;
 	font-weight: 200;
 }
 .TeamMemberWrap div
@@ -473,7 +475,7 @@ body::-webkit-scrollbar-corner
 .TeamMemberWrap div i
 {
 	font-size: 3em;
-	color: #d6fffe40;
+	color: #d6fffe20;
 }
 .TeamMemberWrap div a i
 {
@@ -485,3 +487,6 @@ body::-webkit-scrollbar-corner
 {
 	color: #00b0ff;
 }
+
+/* ---------------------------------------------------------------- Rules */
+
