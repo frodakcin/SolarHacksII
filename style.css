@@ -425,8 +425,7 @@ body::-webkit-scrollbar-corner
 .TeamMemberWrap
 {
 	width: 250px;
-	background: #5a2dc4;
-	color: #d6fffe;
+	color: #740EBD;
 	
 	display: flex;
 	justify-content: center;
@@ -434,16 +433,23 @@ body::-webkit-scrollbar-corner
 	flex-wrap: wrap;
 	flex-direction: column;
 	
-	padding: 2em 1em 1em 1em;
+	padding: 2em 1em 0em 1em;
 	border-radius: 200px 200px 20px 20px;
+	
+	transition: background 0.7s;
+}
+.TeamMemberWrap:hover
+{
+	background: hsl(270, 80%, 98%);
 }
 .TeamMemberWrap img
 {
 	width: 200px;
 	height: 200px;
-	border-radius: 100px;
-	margin: none;
-	padding: none;
+	border-radius: 200px;
+	border: 3px solid;
+	margin: 0;
+	padding: 0;
 	display: block;
 }
 .TeamMemberWrap h1
@@ -469,23 +475,25 @@ body::-webkit-scrollbar-corner
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-around;
-	width: 15em;
-	padding-top: 1em;
 }
 .TeamMemberWrap div i
 {
 	font-size: 3em;
-	color: #d6fffe20;
+	color: #740EBD10;
+	margin: 0;
+	padding: 0.3em 0.4em;
 }
 .TeamMemberWrap div a i
 {
 	cursor: pointer;
-	color: #d6fffe;
-	transition: color 0.5s;
+	color: #740EBD;
+	transition: all 0.4s ease-in-out;
 }
 .TeamMemberWrap div a i:hover
 {
-	color: #00b0ff;
+	color: #4D2391;
+	font-size: 4em;
+	padding: 0.1em 0.175em;
 }
 
 /* ---------------------------------------------------------------- Rules */
