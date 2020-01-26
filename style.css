@@ -75,6 +75,8 @@ body::-webkit-scrollbar-corner
 }
 #frontPageTitle
 {
+	font-size: 8em;
+	font-weight: 700;
 	color: #5a2dc4;
 	text-shadow: 2px 2px 1px #ffddff, -2px -2px 1px #ffddff, -2px 2px 1px #ffddff, 2px -2px 1px #ffddff;
 	padding: 0;
@@ -279,7 +281,6 @@ body::-webkit-scrollbar-corner
 	
 	flex-wrap: nowrap;
 	flex: 1 1 300px;
-	
 }
 
 
