@@ -91,7 +91,6 @@ body::-webkit-scrollbar-corner
 {
 	margin-top: 0.5em;
 	padding-top: 0.1em;
-	font-family: Gilroy;
 	font-size: 2.5em;
 	font-weight: 700;
 
@@ -257,7 +256,7 @@ body::-webkit-scrollbar-corner
 	font-family: Montserrat, sans-serif;
 	font-size: 6em;
 	font-weight: 700;
-	color: #5a2dc4;
+	color: #7289da;
 }
 .infoContent
 {
@@ -289,9 +288,6 @@ body::-webkit-scrollbar-corner
 #about
 {
 }
-#aboutHeader
-{
-}
 #aboutContent
 {
 	margin-top: 15px;
@@ -310,7 +306,7 @@ body::-webkit-scrollbar-corner
 
 /* ---------------------------------------------------------------- FAQ */
 
-#FAQHeader
+#FAQ
 {
 }
 #FAQContainer
@@ -371,35 +367,78 @@ body::-webkit-scrollbar-corner
 #Sponsor
 {
 }
-#SponsorHeader
-{
-}
 
 
 /* ---------------------------------------------------------------- Schedule */
 
 #Sched
 {
+	color: #562675;
 }
-#SchedHeader
+#Sched h2
 {
+	font-family: Montserrat, sans-serif;
+	font-weight: 700;
+	font-size: 2em;
+	padding: 1.5em 0 0 0;
+	margin: 0;
 }
+#Sched ul
+{
+	font-family: Montserrat, sans-serif;
+	font-weight: 700;
+	font-size: 1.2em;
+	
+	width: 80vw;
+	min-width: 500px;
+	max-width: 800px;
+	
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	
+	display: flex;
+	flex-direction: column;
+}
+#Sched ul li
+{
+	display: block;
+	position: relative;
+	width: 100%;
+	transition: background 0.1s;
+}
+#Sched ul li:before
+{
+	content: "";
+	position: absolute;
+	height: 1px;
+	bottom: 0;
+	width: 96%;
+	left: 2%;
+	background: #562675;
+}
+#Sched ul li:hover
+{
+	background: #F6F2FF;
+}
+#Sched ul li div
+{
+	padding: 0.5em 0em 0 0em;
+	display: inline-block;
+	position: relative;
+}
+#Sched ul li div:nth-child(1){float: left;}
+#Sched ul li div:nth-child(2){float: right;}
 
 /* ---------------------------------------------------------------- Awards */
 
 #Award
 {
 }
-#AwardHeader
-{
-}
 
 /* ---------------------------------------------------------------- Our Team */
 
 #Team
-{
-}
-#TeamHeader
 {
 }
 #TeamContent
@@ -425,7 +464,7 @@ body::-webkit-scrollbar-corner
 .TeamMemberWrap
 {
 	width: 250px;
-	color: #740EBD;
+	color: #7289da;
 	
 	display: flex;
 	justify-content: center;
@@ -479,19 +518,19 @@ body::-webkit-scrollbar-corner
 .TeamMemberWrap div i
 {
 	font-size: 3em;
-	color: #740EBD10;
+	color: #7289da10;
 	margin: 0;
 	padding: 0.3em 0.4em;
 }
 .TeamMemberWrap div a i
 {
 	cursor: pointer;
-	color: #740EBD;
+	color: #7289da;
 	transition: all 0.4s ease-in-out;
 }
 .TeamMemberWrap div a i:hover
 {
-	color: #4D2391;
+	color: #92a9fa;
 	font-size: 4em;
 	padding: 0.1em 0.175em;
 }
