@@ -491,10 +491,6 @@ body::-webkit-scrollbar-corner
 	
 	transition: background 0.7s;
 }
-.TeamMemberWrap:hover
-{
-	background: hsl(270, 80%, 98%);
-}
 .TeamMemberWrap img
 {
 	width: 150px;
