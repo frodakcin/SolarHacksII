@@ -540,7 +540,7 @@ body::-webkit-scrollbar-corner
 {
 	cursor: pointer;
 	color: #7289da;
-	transition: all 0.4s ease-in-out;
+	transition: all 0.3s;
 }
 .TeamMemberWrap div a i:hover
 {
