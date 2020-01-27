@@ -223,11 +223,15 @@ body::-webkit-scrollbar-corner
 }
 .separator
 {
+	display: block;
+	position: relative;
 	width: 80%;
 	left: 10%;
+}
+.separator hr
+{
 	height: 0.2em;
 	margin: auto;
-	cursor: pointer;
 	
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
@@ -239,7 +243,7 @@ body::-webkit-scrollbar-corner
 	font-family: Montserrat, sans-serif;
 	font-weight: 200;
 }
-.separator:before
+.separator hr:before
 {
 	content: "BACK TO TOP";
 	position: relative;
