@@ -13,7 +13,11 @@ body
 #wrapper
 {
 }
-
+a
+{
+	color: inherit;
+	text-decoration: inherit;
+}
  
 /* ---------------------------------------------------------------- SCROLL BAR */
 /*
@@ -92,9 +96,10 @@ body::-webkit-scrollbar-corner
 #frontPageButton
 {
 	margin-top: 0.5em;
-	padding-top: 0.1em;
+	padding: 0;
 	font-size: 2.5em;
 	font-weight: 700;
+	text-align: center;
 
 	background: #3b009f;
 	border-radius: 10000px;
@@ -102,7 +107,7 @@ body::-webkit-scrollbar-corner
 	border: 5px solid #3b009f;
 
 	position: relative;
-	width: 7em;
+	width: 6em;
 	height: 2.5em;
 	transition: 0.5s;
 	cursor: pointer;
@@ -111,7 +116,7 @@ body::-webkit-scrollbar-corner
 {
 	height: 2.08333333333em;
 	margin-top: 0.41666666666em;
-	width: 5.83333333333em;
+	width: 5em;
 	font-size: 3em;
 	color: #3b009f;
 	background: #f0b0ff;
@@ -146,6 +151,8 @@ body::-webkit-scrollbar-corner
 
 .headerBarLeft
 {
+	display: block;
+	
 	height: 100%;
 	float: left;
 	font-weight: 500;
@@ -168,6 +175,8 @@ body::-webkit-scrollbar-corner
 
 .headerBarElement
 {
+	display: block;
+	
 	font-weight: 500;
 	font-size: 1em;
 	position: relative;
