@@ -276,14 +276,12 @@ body::-webkit-scrollbar-corner
 	
 	margin-top: 15px;
 	background: #5a2dc4;
-	border-radius: 5px;
-	margin-left: 5vw;
-	margin-right: 5vw;
+	border-radius: 10px;
+	padding: 2em;
 }
-#about div p
+#about div p, #about div iframe
 {
 	min-width: 300px;
-	padding: 20px;
 	margin: 0;
 	
 	flex-wrap: nowrap;
@@ -294,6 +292,12 @@ body::-webkit-scrollbar-corner
 	font-weight: 300;
 	font-size: 1.2em;
 	text-align: justify;
+	margin: 1em;
+}
+#about div iframe
+{
+	min-height: 300px;
+	border-radius: 10px;
 }
 
 /* ---------------------------------------------------------------- FAQ */
