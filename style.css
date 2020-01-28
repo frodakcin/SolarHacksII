@@ -88,6 +88,7 @@ body::-webkit-scrollbar-corner
 }
 .frontPageSubtitle
 {
+	font-size: 2em;
 	color: #f0b0ff;
 	text-shadow: 2px 2px 1px #5a2dc4, -2px -2px 1px #5a2dc4, -2px 2px 1px #5a2dc4, 2px -2px 1px #5a2dc4;
 	padding: 0;
@@ -107,7 +108,7 @@ body::-webkit-scrollbar-corner
 	border: 5px solid #3b009f;
 
 	position: relative;
-	width: 6em;
+	width: 6.5em;
 	height: 2.5em;
 	transition: 0.5s;
 	cursor: pointer;
@@ -115,8 +116,8 @@ body::-webkit-scrollbar-corner
 #frontPageButton:hover
 {
 	height: 2.08333333333em;
+	width: 5.41666666667em;
 	margin-top: 0.41666666666em;
-	width: 5em;
 	font-size: 3em;
 	color: #3b009f;
 	background: #f0b0ff;
@@ -466,7 +467,7 @@ body::-webkit-scrollbar-corner
 {
 	display: block;
 	min-width: 300px;
-	height: 450px;
+	height: 400px;
 	margin: 0;
 	padding: 0;
 	flex: 1 1 400px;
@@ -486,7 +487,7 @@ body::-webkit-scrollbar-corner
 	flex-wrap: wrap;
 	flex-direction: column;
 	
-	padding: 3em 1em 0em 1em;
+	padding: 3em 1em 2em 1em;
 	border-radius: 150px 150px 20px 20px;
 	
 	transition: background 0.7s;
@@ -530,7 +531,7 @@ body::-webkit-scrollbar-corner
 	font-size: 2em;
 	color: #7289da10;
 	margin: 0;
-	padding: 0.2em 0.4em 1em 0.4em;
+	padding: 0.2em 0.4em;
 }
 .TeamMemberWrap div a i
 {
@@ -542,8 +543,38 @@ body::-webkit-scrollbar-corner
 {
 	color: #92a9fa;
 	font-size: 2.5em;
-	padding: 0.06em 0.22em 0.7em 0.22em;
+	padding: 0.06em 0.22em;
 }
 
 /* ---------------------------------------------------------------- Rules */
 
+
+/* ---------------------------------------------------------------- Other */
+
+#linkToSH1
+{
+	text-align: center;
+	margin: 3em 1em;
+}
+#linkToSH1 input
+{
+	background: #7289da;
+	color: lightblue;
+	font-family: Gilroy, sans-serif;
+	font-size: 2em;
+	font-weight: 400;
+	cursor: pointer;
+	
+	border: none;
+	border-radius: 10000px;
+	height: 2em;
+	width: 18em;
+	
+	transition: all 0.5s;
+}
+#linkToSH1 input:hover
+{
+	font-size: 2.05em;
+	height: 1.9512195122em;
+	width: 17.5609756098em;
+}
