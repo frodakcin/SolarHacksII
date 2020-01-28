@@ -510,7 +510,7 @@ body::-webkit-scrollbar-corner
 .TeamMemberWrap div i
 {
 	font-size: 2em;
-	color: #7289da10;
+	color: #7289da30;
 	margin: 0;
 	padding: 0.2em 0.4em;
 }
@@ -522,7 +522,7 @@ body::-webkit-scrollbar-corner
 }
 .TeamMemberWrap div a i:hover
 {
-	color: #92a9fa;
+	color: #5269ba;
 	font-size: 2.5em;
 	padding: 0.06em 0.22em;
 }
