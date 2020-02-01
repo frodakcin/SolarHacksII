@@ -17,7 +17,7 @@ a
 	color: inherit;
 	text-decoration: inherit;
 }
- 
+
 /* ---------------------------------------------------------------- SCROLL BAR */
 /*
 body::-webkit-scrollbar
@@ -54,6 +54,7 @@ body::-webkit-scrollbar-corner
 	height: 100vh;
 	width: 100%;
 	position: relative;
+
 	background-image: url("logo_img.png"), url("background_1.jpg");
 	background-attachment: scroll, fixed;
 	background-size: 150px 150px, cover;
@@ -62,14 +63,14 @@ body::-webkit-scrollbar-corner
 
 	color: white;
 	align-content: center;
-	
+
 	font-family: Gilroy, sans-serif;
 }
 #frontPageInformation
 {
 	width: 100%;
 	height: 100%;
-	background: hsla(300, 14%, 43%, 0.6);
+	background: hsla(300, 14%, 43%, 0.4);
 
 	display: flex;
 	flex-direction: column;
@@ -80,8 +81,8 @@ body::-webkit-scrollbar-corner
 {
 	font-size: 7em;
 	font-weight: 700;
-	color: #5a2dc4;
-	text-shadow: 2px 2px 1px #ffddff, -2px -2px 1px #ffddff, -2px 2px 1px #ffddff, 2px -2px 1px #ffddff;
+	color: #d000d0 /*#5a2dc4*/;
+	text-shadow: 2px 2px 0px #ffddff, -2px -2px 0px #ffddff, -2px 2px 0px #ffddff, 2px -2px 0px #ffddff;
 	padding: 0;
 	margin: 0;
 }
@@ -89,7 +90,7 @@ body::-webkit-scrollbar-corner
 {
 	font-size: 2em;
 	color: #f0b0ff;
-	text-shadow: 2px 2px 1px #5a2dc4, -2px -2px 1px #5a2dc4, -2px 2px 1px #5a2dc4, 2px -2px 1px #5a2dc4;
+	text-shadow: 1px 1px 0px #5a2dc4, -1px -1px 0px #5a2dc4, -1px 1px 0px #5a2dc4, 1px -1px 0px #5a2dc4;
 	padding: 0;
 	margin: 0;
 }
@@ -102,7 +103,7 @@ body::-webkit-scrollbar-corner
 	text-align: center;
 
 	background: #3b009f;
-	border-radius: 10000px;
+	border-radius: 15px;
 	color: white;
 	border: 5px solid #3b009f;
 
@@ -131,7 +132,7 @@ body::-webkit-scrollbar-corner
 	position: -webkit-sticky;
 	top: 0;
 	overflow: visible;
-	
+
 	height: 50px;
 	z-index: 1;
 	width: 100%;
@@ -141,7 +142,7 @@ body::-webkit-scrollbar-corner
 	*/
 	background: black;
 	color: #f0b0ff;
-	
+
 	font-family: Gilroy, sans-serif;
 }
 
@@ -151,7 +152,7 @@ body::-webkit-scrollbar-corner
 	flex-direction: column;
 	flex-wrap: wrap;
 	justify-content: center;
-	
+
 	height: 100%;
 	float: left;
 	font-weight: 500;
@@ -172,7 +173,7 @@ body::-webkit-scrollbar-corner
 	height: 100%;
 	display: flex;
 	flex-direction: column;
-	
+
 	font-weight: 500;
 	font-size: 1em;
 	position: relative;
@@ -186,7 +187,7 @@ body::-webkit-scrollbar-corner
 .headerBarElement:before, .headerBarElement:after
 {
 	display: flex;
-	
+
 	content: attr(disp);
 	height: 0;
 	overflow: hidden;
@@ -219,12 +220,12 @@ body::-webkit-scrollbar-corner
 {
 	height: 0.2em;
 	margin: auto;
-	
+
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
 	border-left: none;
 	border-right: none;
-	
+
 	overflow: visible;
 	text-align: center;
 	font-family: Montserrat, sans-serif;
@@ -253,7 +254,7 @@ body::-webkit-scrollbar-corner
 	padding-bottom: 0;
 	margin: 0;
 	border-radius: 10000px;
-	
+
 	font-family: Montserrat, sans-serif;
 	font-size: 6em;
 	font-weight: 700;
@@ -273,7 +274,7 @@ body::-webkit-scrollbar-corner
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	
+
 	margin-top: 15px;
 	background: #5a2dc4;
 	border-radius: 10px;
@@ -283,10 +284,10 @@ body::-webkit-scrollbar-corner
 {
 	min-width: 300px;
 	margin: 0;
-	
+
 	flex-wrap: nowrap;
 	flex: 1 1 300px;
-	
+
 	font-family: 'Open Sans', sans-serif;
 	color: #d6fffe;
 	font-weight: 300;
@@ -315,15 +316,15 @@ body::-webkit-scrollbar-corner
 .FAQBox
 {
 	min-width: 300px;
-	
+
 	padding: 1em;
 	border-radius: 5px;
 	margin: 10px;
-	
+
 	flex: 1 1 400px;
 	text-align: left;
 	transition: background 0.5s;
-	
+
 	color: hsla(330, 20%, 45%, 1);
 }
 .FAQBox:hover
@@ -348,7 +349,7 @@ body::-webkit-scrollbar-corner
 	font-family: Open Sans, sans-serif;
 	text-align: justify;
 	padding: 0 1em;
-	
+
 	margin: 0;
 	overflow: hidden;
 	transition: max-height 0.5s ease-in-out;
@@ -384,15 +385,15 @@ body::-webkit-scrollbar-corner
 	font-family: Montserrat, sans-serif;
 	font-weight: 700;
 	font-size: 1.2em;
-	
+
 	width: 80vw;
 	min-width: 500px;
 	max-width: 800px;
-	
+
 	list-style-type: none;
 	padding: 0;
 	margin: 0;
-	
+
 	display: flex;
 	flex-direction: column;
 }
@@ -409,8 +410,8 @@ body::-webkit-scrollbar-corner
 	position: absolute;
 	height: 1px;
 	bottom: 0;
-	width: 96%;
-	left: 2%;
+	width: 90%;
+	left: 5%;
 	background: #562675;
 }
 #Sched ul li:hover
@@ -419,7 +420,7 @@ body::-webkit-scrollbar-corner
 }
 #Sched ul li div
 {
-	padding: 0.5em 0em 0 0em;
+	padding: 0.5em 0.5em 0 0.5em;
 	display: inline-block;
 	position: relative;
 }
@@ -452,7 +453,7 @@ body::-webkit-scrollbar-corner
 	margin: 0;
 	padding: 0;
 	flex: 1 1 400px;
-	
+
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -461,16 +462,16 @@ body::-webkit-scrollbar-corner
 {
 	width: 250px;
 	color: #7289da;
-	
+
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
 	flex-direction: column;
-	
+
 	padding: 3em 1em 2em 1em;
 	border-radius: 150px 150px 20px 20px;
-	
+
 	transition: background 0.7s;
 }
 .TeamMemberWrap img
@@ -539,23 +540,21 @@ body::-webkit-scrollbar-corner
 }
 #linkToSH1 input
 {
-	background: #7289da;
-	color: lightblue;
-	font-family: Gilroy, sans-serif;
+	background: hsl(60, 70%, 70%);
+	color: hsl(330, 70%, 30%);
+		font-family: Gilroy, sans-serif;
 	font-size: 2em;
-	font-weight: 400;
+	font-weight: 700;
 	cursor: pointer;
-	
+
 	border: none;
-	border-radius: 10000px;
+	border-radius: 10px;
 	height: 2em;
-	width: 18em;
-	
-	transition: all 0.5s;
+	padding: 0em 1em;
+
+	transition: all 0.2s;
 }
 #linkToSH1 input:hover
 {
-	font-size: 2.05em;
-	height: 1.9512195122em;
-	width: 17.5609756098em;
+	box-shadow: inset 0px 0px 20px 10px hsla(0, 0%, 0%, 20%);
 }
