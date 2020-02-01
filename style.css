@@ -82,7 +82,8 @@ body::-webkit-scrollbar-corner
 	font-size: 7em;
 	font-weight: 700;
 	color: #d000d0 /*#5a2dc4*/;
-	text-shadow: 2px 2px 0px #ffddff, -2px -2px 0px #ffddff, -2px 2px 0px #ffddff, 2px -2px 0px #ffddff;
+	text-shadow: 2px 2px 0px #ffddff, -2px -2px 0px #ffddff,
+		-2px 2px 0px #ffddff, 2px -2px 0px #ffddff;
 	padding: 0;
 	margin: 0;
 }
@@ -90,7 +91,8 @@ body::-webkit-scrollbar-corner
 {
 	font-size: 2em;
 	color: #f0b0ff;
-	text-shadow: 1px 1px 0px #5a2dc4, -1px -1px 0px #5a2dc4, -1px 1px 0px #5a2dc4, 1px -1px 0px #5a2dc4;
+	text-shadow: 1px 1px 0px #5a2dc4, -1px -1px 0px #5a2dc4,
+		-1px 1px 0px #5a2dc4, 1px -1px 0px #5a2dc4;
 	padding: 0;
 	margin: 0;
 }
@@ -121,6 +123,20 @@ body::-webkit-scrollbar-corner
 	font-size: 3em;
 	color: #3b009f;
 	background: #f0b0ff;
+}
+#frontPageInformation a
+{
+	position: absolute;
+	bottom: 0;
+	font-size: 3em;
+	transition: all 0.3s ease-in-out;
+	color: #ffffff80;
+}
+#frontPageInformation a:hover
+{
+	bottom: -0.10526315789em;
+	font-size: 3.8em;
+	color: #ffffffb0;
 }
 
 /* ---------------------------------------------------------------- HEADER */
@@ -196,7 +212,7 @@ body::-webkit-scrollbar-corner
 .headerBarElement:after {font-weight: 700;}
 .headerBarElement:hover {font-weight: 700;}
 
-/* ---------------------------------------------------------------- GENERAL INFORMATION */
+/* ---------------------------------------------------------------- GENERAL */
 #information
 {
 	position: relative;
