@@ -103,9 +103,9 @@ body::-webkit-scrollbar-corner
 	text-align: center;
 
 	background: #3b009f;
-	border-radius: 15px;
+	border-radius: 20px;
 	color: white;
-	border: 5px solid #3b009f;
+	border: 10px solid #3b009f;
 
 	position: relative;
 	width: 6.5em;

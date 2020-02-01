@@ -13,4 +13,4 @@ function FAQDrop(item)
 		sib.classList.add("FAQBoxOnP");
 		par.classList.add("FAQBoxOn");
 	}
-}	
+}
